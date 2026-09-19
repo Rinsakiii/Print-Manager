@@ -5,6 +5,10 @@
   "description": "Queue, cost-track, and hand off .3mf plates to your slicer of choice.",
   "main": "main.js",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rinsakiii/Print-Manager.git"
+  },
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder"
@@ -33,6 +37,11 @@
     "win": {
       "target": "nsis",
       "icon": "assets/icon.png"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "Rinsakiii",
+      "repo": "Print-Manager"
     }
   },
   "dependencies": {
