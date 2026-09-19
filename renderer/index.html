@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'" />
+  <title>Print Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand" id="brand"></div>
+      <nav class="tabs" id="tabs"></nav>
+      <div class="topbar-spacer"></div>
+      <button class="command-trigger" id="command-trigger" type="button">
+        <span id="command-trigger-icon"></span>
+        <span>Jump to&hellip;</span>
+        <kbd id="command-trigger-kbd">&#8984;K</kbd>
+      </button>
+    </header>
+    <main id="view-root"></main>
+  </div>
+  <div id="modal-root"></div>
+  <div id="cmdk-root"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

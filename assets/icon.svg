@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="cutouts" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect x="0" y="0" width="1024" height="1024" fill="#FFFFFF"/>
+      <g transform="translate(92,0)" fill="#000000">
+        <!-- screen -->
+        <rect x="500" y="768" width="70" height="38" rx="8"/>
+        <!-- cooling vents -->
+        <rect x="300" y="388" width="32" height="9" rx="4.5"/>
+        <rect x="300" y="402" width="32" height="9" rx="4.5"/>
+        <rect x="300" y="416" width="32" height="9" rx="4.5"/>
+        <!-- bed texture lines -->
+        <rect x="165" y="642" width="390" height="6" rx="3"/>
+        <rect x="165" y="654" width="390" height="6" rx="3"/>
+        <rect x="165" y="666" width="390" height="6" rx="3"/>
+        <!-- gantry rail bolts -->
+        <circle cx="330" cy="453" r="6"/>
+        <circle cx="480" cy="453" r="6"/>
+        <circle cx="600" cy="453" r="6"/>
+      </g>
+    </mask>
+  </defs>
+
+  <g transform="translate(92,0)" fill="#FFFFFF" mask="url(#cutouts)">
+    <!-- base: electronics housing -->
+    <rect x="195" y="720" width="290" height="105" rx="32"/>
+    <!-- base: display housing -->
+    <rect x="470" y="750" width="230" height="75" rx="20"/>
+
+    <!-- struts holding the plate above the base -->
+    <rect x="210" y="680" width="18" height="42" rx="8"/>
+    <rect x="460" y="680" width="18" height="42" rx="8"/>
+
+    <!-- print bed / build plate -->
+    <rect x="140" y="630" width="440" height="50" rx="14"/>
+    <!-- retaining clips -->
+    <rect x="172" y="613" width="34" height="34" rx="9"/>
+    <rect x="516" y="613" width="34" height="34" rx="9"/>
+
+    <!-- in-progress print sitting on the bed, under the nozzle -->
+    <rect x="322" y="610" width="76" height="20" rx="6"/>
+    <rect x="334" y="590" width="52" height="20" rx="6"/>
+    <rect x="345" y="570" width="30" height="20" rx="6"/>
+
+    <!-- vertical column -->
+    <rect x="565" y="255" width="72" height="505" rx="22"/>
+
+    <!-- gantry arm -->
+    <rect x="290" y="425" width="360" height="56" rx="24"/>
+
+    <!-- toolhead body -->
+    <rect x="284" y="374" width="150" height="148" rx="26"/>
+    <!-- top LED / cable-mount nub -->
+    <rect x="334" y="356" width="50" height="26" rx="11"/>
+
+    <!-- nozzle, centered under the toolhead, pointing straight down -->
+    <path d="M 335 522 L 383 522 L 359 562 Z"/>
+  </g>
+
+  <!-- looping cable -->
+  <path transform="translate(92,0)" d="M 360 355 C 420 188 608 188 615 320" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- camera / lens ring (open center is naturally transparent) -->
+  <circle transform="translate(92,0)" cx="378" cy="466" r="26" fill="none" stroke="#FFFFFF" stroke-width="12"/>
+</svg>

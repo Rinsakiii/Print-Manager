@@ -1,0 +1,41 @@
+{
+  "name": "print-manager",
+  "productName": "Print Manager",
+  "version": "1.0.0",
+  "description": "Queue, cost-track, and hand off .3mf plates to your slicer of choice.",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.printmanager.app",
+    "productName": "Print Manager",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "renderer/**/*",
+      "assets/**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.productivity",
+      "icon": "assets/icon.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.png"
+    }
+  },
+  "dependencies": {
+    "adm-zip": "^0.6.1"
+  }
+}
